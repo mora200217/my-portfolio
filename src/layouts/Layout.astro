@@ -1,14 +1,11 @@
 ---
 
-import '@fontsource/lato';
-import { AstroFont } from "astro-font";
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../global/Footer.astro';
-import "../styles/globals.css"
-
 
 // Styles 
-import "../styles/fonts.sass"; 
+import "@styles/globals.sass"; 
+import "@styles/components/Layout.sass"
 
 
 interface Props {
@@ -24,9 +21,9 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Andres | {title}</title>

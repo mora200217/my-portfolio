@@ -1,0 +1,88 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.hero
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 100vh
+  text-align: center
+  background-color: #fff
+  position: relative
+  overflow: hidden
+
+  &::before
+    content: ''
+    position: absolute
+    top: -150px
+    left: -150px
+    width: 300px
+    height: 300px
+    background: #ff6584
+    clip-path: polygon(0 0, 100% 0, 0 100%)
+    opacity: 0.7
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: -150px
+    right: -150px
+    width: 300px
+    height: 300px
+    background: #ff6584
+    clip-path: polygon(100% 0, 100% 100%, 0 100%)
+    opacity: 0.7
+
+  h1
+    font-size: 4rem
+    color: #333
+
+  p
+    font-size: 1.5rem
+    color: #666
+    max-width: 600px
+    margin: 20px 0
+
+/* Geometric patterns (triangles)
+
+.btn
+  padding: 15px 30px
+  background-color: #ff6584
+  color: white
+  text-decoration: none
+  font-size: 1rem
+  border-radius: 50px
+  transition: background-color 0.3s ease
+
+  &:hover
+    background-color: #ff3366
+
+/* Starting state: content is off the right of the screen
+
+.fade-enter
+  transform: translateX(100%)
+  transition: transform 400ms ease, background-color 400ms ease
+  background-color: white
+
+/* Active state: content slides into view
+
+.fade-enter-active
+  transform: translateX(0)
+  background-color: red
+
+  /* Example background color
+
+/* Exiting state: content starts on the screen
+
+.fade-exit
+  transform: translateX(0)
+  background-color: lightblue
+
+/* Active state: content slides out of view
+
+.fade-exit-active
+  transform: translateX(-100%)
+  background-color: white
