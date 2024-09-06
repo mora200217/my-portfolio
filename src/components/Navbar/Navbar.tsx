@@ -3,6 +3,7 @@ import React from 'react';
 import './Navbar.css';
 import Logo from "../../../public/media/brand-white.svg"
 
+// Main navbar 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
 
