@@ -14,11 +14,13 @@ function sketch(p5: P5CanvasInstance) {
   p5.setup = () => {
     p5.createCanvas(600, 600, p5.WEBGL);
     count = 0; 
+    p5.clear(); 
     
   };
 
   p5.draw = () => {
-    p5.clear();
+    
+    
     
     // Lorenz Attractor Equations
     const dt = 0.01;
@@ -40,17 +42,20 @@ function sketch(p5: P5CanvasInstance) {
 
     // p5.beginShape();
     let N =  points.length; 
-    for (let vl of points) {
+
+    const vl = points[points.length - 1]; 
+    // for (let vl of points) {
         const R = 0.3; 
-        const norm = vl.mag() * 20 + 30; 
+        const norm = p5.max(vl.mag() * 10 , 200); 
         console.log(norm)
         p5.stroke(norm)
         p5.ellipse(vl.x, vl.y, R, R);
         
-    }
+    // }
     // p5.endShape();
   };
-}
+  }
+
 
 export default function Lorentz() {
   return <ReactP5Wrapper sketch={sketch} />;
