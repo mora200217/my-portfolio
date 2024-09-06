@@ -1,50 +1,42 @@
+@import "../globals.sass"
+
 *
   margin: 0
   padding: 0
   box-sizing: border-box
 
+// Hero component with image and text
 .hero
   display: flex
-  flex-direction: column
+  flex-direction: row
   justify-content: center
   align-items: center
   height: 100vh
   text-align: center
-  background-color: #fff
+  background:red
+  color: white
   position: relative
   overflow: hidden
+  @include blendy("/media/mathBackground.png", $main-gradient, overlay)
+  // Title
+  div 
+    width: 50%
+    display: flex
+    flex-direction: column
 
-  &::before
-    content: ''
-    position: absolute
-    top: -150px
-    left: -150px
-    width: 300px
-    height: 300px
-    background: #ff6584
-    clip-path: polygon(0 0, 100% 0, 0 100%)
-    opacity: 0.7
 
-  &::after
-    content: ''
-    position: absolute
-    bottom: -150px
-    right: -150px
-    width: 300px
-    height: 300px
-    background: #ff6584
-    clip-path: polygon(100% 0, 100% 100%, 0 100%)
-    opacity: 0.7
+  div#main-title
+    span
+      display: inline-block
+      background: white
+      color: black
+      padding: 0 0.5rem 0 0.5rem
+      margin-left: 5px
+    // background: red
+    
+    display: block
+  // Animation or image
 
-  h1
-    font-size: 4rem
-    color: #333
-
-  p
-    font-size: 1.5rem
-    color: #666
-    max-width: 600px
-    margin: 20px 0
 
 /* Geometric patterns (triangles)
 
