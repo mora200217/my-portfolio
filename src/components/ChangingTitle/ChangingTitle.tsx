@@ -10,9 +10,9 @@ export const ChangingTitle = () => {
     /*
     getTitle
     */
-    setInterval(()=>{
-        setCounter((counter + 1) % titleList.length); 
-    }, 2000)
+    // setInterval(()=>{
+    //     setCounter((counter + 1) % titleList.length); 
+    // }, 2000)
 
     return(
         <Fragment>

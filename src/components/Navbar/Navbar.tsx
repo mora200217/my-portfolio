@@ -25,10 +25,10 @@ const Navbar: React.FC = () => {
           </a>
         </h1>
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/research">Research</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
         <div className="navbar-toggle" onClick={toggleMenu}>
           <span className="navbar-toggler"></span>
