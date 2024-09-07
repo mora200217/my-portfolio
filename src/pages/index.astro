@@ -1,17 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 // import "@styles/globals.sass"
+import {ChangingTitle} from '../components/ChangingTitle/ChangingTitle'; 
+import { Socials } from '../components/Socials/Socials';
+import Lorentz from '../components/Lorentz/Lorentz';
 
 ---
 
 <Layout title="Home - Modern Geometric Hero">
   <section class="hero light-text">
       <div id="main-title">
-          <h1>¡Hola! Soy <span class="block">Andrés</span></h1>
-          <p>Conoce más de mi trabajo</p>
+         <ChangingTitle client:only="react" />
       </div>
       <div id="main-image">
-        Here comes the sun :v 
+        <Lorentz client:only="react" />
       </div>
+
+      <Socials/>
   </section>
 </Layout>
