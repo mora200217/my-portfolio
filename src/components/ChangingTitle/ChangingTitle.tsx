@@ -16,11 +16,7 @@ export const ChangingTitle = () => {
 
     return(
         <Fragment>
-<<<<<<< HEAD
-            <h1>¡Hola! Soy <span className="block"> {titleList[counter]}</span></h1>
-=======
             <h1 id="title-hero">¡Hola! Soy <span className="block"> {titleList[counter]}</span></h1>
->>>>>>> f/landing
             <p>Conoce más de mi trabajo</p>
         </Fragment>
     )
