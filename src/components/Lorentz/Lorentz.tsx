@@ -47,9 +47,10 @@ function sketch(p5: P5CanvasInstance) {
     // for (let vl of points) {
         const R = 0.3; 
         const norm = p5.max(vl.mag() * 10 , 200); 
-        console.log(norm)
+        // console.log(norm)
         p5.stroke(norm)
-        p5.ellipse(vl.x, vl.y, R, R);
+        if(points.length < 20000)
+          p5.ellipse(vl.x, vl.y, R, R);
         
     // }
     // p5.endShape();
