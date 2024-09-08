@@ -8,15 +8,14 @@ import Lorentz from '../components/Lorentz/Lorentz';
 
 ---
 
-<Layout title="Home - Modern Geometric Hero">
-  <section class="hero light-text">
-      <div id="main-title">
+<Layout title="Home">
+  <section class="hero light-text row">
+      <div id="main-title" class="col-xs-12 col-md-6">
          <ChangingTitle client:only="react" />
       </div>
-      <div id="main-image">
+      <div id="main-image" class="col-md-6 d-none d-lg-block">
         <Lorentz client:only="react" />
       </div>
-
       <Socials/>
   </section>
 </Layout>
