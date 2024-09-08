@@ -1,6 +1,6 @@
 /* src/components/Navbar.css */
 .navbar {
-    background-color: none;
+    background-color: none !important;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
