@@ -1,7 +1,5 @@
 import "./Socials.sass"
 
-import  Logo from '../../../public/media/GitHub.svg';
-
 // Logos for social block 
 import { Github } from "./icons/Github";
 import { Linkedin } from "./icons/Linkedin";
